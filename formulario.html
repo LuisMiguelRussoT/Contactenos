@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/codigo.js"></script>
+
+
+</head>
+
+<body>
+
+    <center>
+        <h2>Contactenos</h2>
+    </center>
+
+    <div class="formulario">
+        <div id="forms">
+            <div class="fila">
+                <div class="Nombre_Fila">
+                    <label for="nombre">Nombre Completo</label>
+                </div>
+                <div class="Espacio_Rellenar">
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres y Apellidos Completos.....">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="Nombre_Fila">
+                    <label for="correo">Correo Electronico</label>
+                </div>
+                <div class="Espacio_Rellenar">
+                    <input type="text" id="correo" name="correo" placeholder="Correo Eletronico........">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="Nombre_Fila">
+                    <label for="asunto">Asunto</label>
+                </div>
+                <div class="Espacio_Rellenar">
+                    <select id="asunto" name="asunto">
+                        <option value="---">---</option>
+                        <option value="pqr">PQR</option>
+                        <option value="solicitudes">Solicitudes</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="Nombre_Fila">
+                    <label for="mensaje">Mensaje</label>
+                </div>
+                <div class="Espacio_Rellenar">
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe Algo.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button onclick=imprimir()>Enviar</button>
+                <button onclick=resetear()>Reset</button>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
